@@ -3,8 +3,6 @@ package uaslp.objetos.parcial1.examen.pos;
 public class CartItem {
     private int quantity;
     private Product product;
-    private float amount;
-    private String name;
 
     public int getQuantity() {
         return quantity;
@@ -22,15 +20,11 @@ public class CartItem {
         this.product = product;
     }
 
-    public float getAmount(){
-        amount = product.getAmount();
-
-        return amount;
+    public String getProductName(){
+        return product.getName();
     }
 
-    public String getProductName(){
-        name = product.getName();
-
-        return name;
+    public float getAmount(){
+        return product.getAmount();
     }
 }
